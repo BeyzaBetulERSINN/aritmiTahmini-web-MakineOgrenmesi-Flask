@@ -1,0 +1,58 @@
+{% extends 'loyout.html' %}
+{% block body %}
+
+
+<div class="bg-light">
+<h2>{{ page_title }}</h2>
+
+ 
+<form method='POST' action='/degeral'>
+
+       <b >Kullanıcı Adı:</b><br />
+      <input type="text" name="isim" size="24"><br /><br />
+      <b>Yaş:</b><br />
+      <input type="text" name="age"  width="10"><br /><br />
+      <b>Cinsiyet:</b><br />
+      <input type="radio" name="sex"  value="1"> Erkek <br />
+      <input type="radio" name="sex"  value="0"> Kadın <br /><br />
+      <b>Ağrı tipi:</b><br />
+      <input type="radio" name="cp" value="1"> typical angina <br />
+      <input type="radio" name="cp" value="2"> atypical angina <br />
+      <input type="radio" name="cp" value="3"> non - anginal pain <br />
+      <input type="radio" name="cp" value="4"> asymptotic <br /><br />
+      <b>Dinlenme kan basıncı:</b><br />
+      <input type="text" name="trestbps" size="24"><br /><br />
+      <b>Kolesterol:</b><br />
+      <input type="text" name="chol" size="24"><br /><br />
+      <b>Şeker hastası mı:</b><br />
+      <input type="radio" name="fbs" value="1"> Şeker hastası <br />
+      <input type="radio" name="fbs" value="0"> Şeker hastası değil <br /><br />
+      <b>Elektrokardiyoloji:</b><br />
+      <input type="radio" name="restecg" value="0"> normal <br />
+      <input type="radio" name="restecg" value="1"> having ST-T wave abnormality <br />
+      <input type="radio" name="restecg" value="2"> left ventricular hyperthrophy <br /><br />
+      <b>Maksimum kalp ritmi:</b><br />
+      <input type="text" name="thalach" size="24"><br /><br />
+      <b>Göğüs ağrısı:</b><br />
+      <input type="radio" name="exang" value="1"> Göğüs ağrım var <br />
+      <input type="radio" name="exang" value="0"> Göğüs ağrım yok <br /><br />
+      <b>ST:</b><br />
+      <input type="text" name="oldpeak" size="24"><br /><br />
+      <b>ST segmenti:</b><br />
+      <input type="radio" name="slope" value="1"> upsloping <br />
+      <input type="radio" name="slope" value="2"> flat <br />
+      <input type="radio" name="slope" value="3"> downsloping <br /><br />
+      <b>Tıkalı damar sayısı:</b><br />
+      <input type="text" name="ca" size="24"><br /><br />
+      <b>Akdeniz anemeliği:</b><br />
+      <input type="radio" name="thal" value="1"> normal <br />
+      <input type="radio" name="thal" value="2"> fixed defect <br />
+      <input type="radio" name="thal" value="3"> reversable defect <br /><br />
+
+      <input type="submit" name="gonder" value="Gönder"><br /><br />
+
+    
+</form>
+</div>
+ 
+{% endblock %}

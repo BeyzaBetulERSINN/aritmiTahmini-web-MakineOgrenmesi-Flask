@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> <!--info-->
+        <a class="navbar-brand" href="/anasayfa">Anasayfa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item active">
+              <a class="nav-link" href="/">Aritmi Testi</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/about">Hakkımızda</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/articles">Makaleler</a>
+            </li>
+           
+          </ul>
+
+         <ul class="navbar-nav ml-auto">
+
+          {% if session["logged_in"] %} 
+          <li class="nav-item active">
+              <a class="nav-link" href="/dashboard">Kontrol Paneli</a>
+            </li>  
+          <li class="nav-item active">
+              <a class="nav-link" href="/logout">Çıkış Yap</a>
+            </li>
+            
+          {% else %}
+          <li class="nav-item active">
+              <a class="nav-link" href="/login">Giriş Yap</a>
+            </li>
+
+          {% endif %}
+
+
+          
+          
+          <li class="nav-item active">
+            <a class="nav-link" href="/register">Kayıt Olun</a>
+          </li>
+        
+        </ul>
+        </div>
+      </nav>
+</body>
+</html>

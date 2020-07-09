@@ -1,0 +1,48 @@
+{% extends "loyout.html" %}
+{% block body %}
+ 
+<h2>{{ page_title }}</h2>
+<div class="list-group">
+ 
+<ul class="list-group">
+ <li class="list-group-item list-group-item-dark text-center">GİRİLEN DEĞERLER</li>
+<a href="#" class="list-group-item list-group-item-action">İsim: {{ad}}</a>
+<a href="#" class="list-group-item list-group-item-action">yaş: {{yas}}</a>
+<a href="#" class="list-group-item list-group-item-action">Cinsiyet: {{cinsiyet}}</a>
+<a href="#" class="list-group-item list-group-item-action">Ağrı Tipi: {{agritipi}}</a>
+<a href="#" class="list-group-item list-group-item-action">dinlenme kan basıncı: {{dinkanbas}}</a>
+<a href="#" class="list-group-item list-group-item-action">mg/dl (unit) deki serum kolestrol miktarı: {{kolesterol}}</a>
+<a href="#" class="list-group-item list-group-item-action">Şeker hastalığı: {{sekerhastaligi}}</a>
+<a href="#" class="list-group-item list-group-item-action">Dinlenme halindeki ECG si: {{ecg}}</a>
+<a href="#" class="list-group-item list-group-item-action">Ulaşılmış maksimum kalp hızı: {{maxkalpr}}</a>
+<a href="#" class="list-group-item list-group-item-action">Göğüs ağrısı var mı: {{gogusagrisi}}</a>
+<a href="#" class="list-group-item list-group-item-action">Dinlenmeye göre egzersizle indüklenen ST depresyonu: {{st}}</a>
+<a href="#" class="list-group-item list-group-item-action">ST segmenti: {{stsegmenti}}</a>
+<a href="#" class="list-group-item list-group-item-action">Floroskopi ile renklendirilmiş ana damarların (0-3) sayısı: {{anadamarsay}}</a>
+<a href="#" class="list-group-item list-group-item-action">Akdeniz anemeliği durumu: {{hasarorani}}</a>
+
+</ul>
+</div>
+<br><br>
+
+<ul class="list-group">
+<li class="list-group-item list-group-item-dark text-center">TAHMİNLER</li>
+<li class="list-group-item list-group-item-secondary">Logistic Regression'a Göre Doğruluk Oranı: {{dogruluk1}}</li>
+<li class="list-group-item list-group-item-light">Hastalık durumu: {{durumLR}}</li>
+<li class="list-group-item list-group-item-secondary">Naive Bayes'e Göre Doğruluk Oranı: {{dogruluk2}}</li>
+<li class="list-group-item list-group-item-light">Hastalık durumu: {{durumNB}}</li>
+<li class="list-group-item list-group-item-secondary">En Yakın Komşu Algoritmasına Göre Doğruluk Oranı: {{dogruluk3}}</li>
+<li class="list-group-item list-group-item-light">Hastalık durumu: {{durumKNN}}</li>
+<li class="list-group-item list-group-item-secondary">Karar Ağaçlarına Göre Doğruluk Oranı: {{dogruluk4}}</li>
+<li class="list-group-item list-group-item-light">Hastalık durumu: {{durumDTC}}</li>
+
+</ul>
+
+
+
+
+
+
+
+
+{% endblock %}

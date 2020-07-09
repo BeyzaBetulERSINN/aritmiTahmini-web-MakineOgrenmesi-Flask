@@ -1,0 +1,236 @@
+{% extends "loyout.html" %}
+
+{% block body %}
+
+
+
+ 
+
+
+<!--Slider Başlangıcı-->
+<div class="bg-light"> <!--info-->
+<div class="container-fluid">
+
+
+
+   
+     <div align="center" >
+
+
+    <div id="kontrol" class="carousel slide col-md-4" data-ride="carousel" >
+      
+      <a href="#kontrol" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="sr-only">Previous</span></a>
+
+        <a href="#kontrol" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only">Next</span></a>
+        </div>
+
+        <hr>
+
+        <div id="kontrol1" class="carousel slide col-md-9" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#kontrol1" data-slide-to="0" class="active"></li>
+            <li data-target="#kontrol1" data-slide-to="1" ></li>
+            <li data-target="#kontrol1" data-slide-to="2"></li>
+           
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{{ url_for('static', filename='kalp5.PNG') }}" style="width: 850px; height: 350px;">
+              <div class="carousel-caption">
+              <h4 >Aritmi Hakkında</h4>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="{{ url_for('static', filename='kalp2.PNG') }}" style="width: 850px; height: 350px;">
+              <div class="carousel-caption">
+                <h4  >Bilgi Almak</h4>
+               
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="{{ url_for('static', filename='kalp3.PNG') }}" style="width: 850px; height: 350px;">
+                <div class="carousel-caption">
+               <h4 >Test Yapmak İçin</h4>
+               
+              </div>
+            </div>
+
+            
+
+          <a href="#kontrol1" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span></a>
+
+            <a href="#kontrol1" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span></a>
+            </div>
+
+
+</div>
+          </div>
+
+
+
+<!--Slider Sonu -->
+
+<br> <br>
+
+<div class="card">
+  <div class="card-header">
+  <strong>  Aritmi Nedir?  </strong>
+  </div>
+  <div class="card-body">
+    
+    <p class="card-text">Aritmi birçok nedene bağlı olarak ortaya çıkan kaotik bir rahatsızlıktır. 
+    Bu hastalığın asıl sebebi kalbin kaotik bir biçimde kasılmasıdır. Düzensiz kasılmalar vücut tarafından 
+    bazen tolere edilebilir fakat metabolizmayı olumsuz etkiler. Bu durum aslında kalp aritmi hastalarının sürekli 
+    bir ölüm riski taşımaları anlamına gelir.</p>
+    
+  </div>
+</div>
+
+
+<br><br>
+
+<div class="card">
+  <div class="card-header">
+   <strong> Kalp Çarpıntısı Neden Olur?</strong>
+  </div>
+  <div class="card-body">
+    
+    <p class="card-text">Kalp hızının 140 üstü değerlere çıkması olarak görülen kalp çarpıntısının nedenlerinin
+     doğru tespiti için EKO testi, tiroid testlerinin yapılması ve kan testleriyle kansızlık olup olmadığının
+      araştırılması gerekir. 
+
+ Kalp çarpıntısının niteliğinin tespitinde, çarpıntı sırasında, 12 derivasyon elektrokardiyografi (EKG) 
+yönteminin kullanılmasının önemi büyük. Kalp ritim bozukluğu (aritmik taşikardi) tespit edildiğinde ileri tedavi için kalbin elektriksel aktivitelerinin kontrol edildiği elektrofizyolojik çalışmanın yapılması da oldukça mühim. İleri tedavide söz konusu kalp çarpıntısı (aritmik taşikardi) laboratuvar 
+ortamında oluşturulmalı ve nereden kaynaklandığı, nasıl bir etkiyle ortaya çıktığı anlaşılmalıdır.</p>
+   
+  </div>
+</div>
+<br> <br>
+
+<div class="card">
+  <div class="card-header">
+    <strong> Aritmi Türleri Nelerdir? </strong>
+  </div>
+  <div class="card-body">
+    Aritmi, kalp atış hızına göre taşikardi ve bradikardi olarak iki gruba ayrılır. 
+    <br>
+    <h5 class="card-title">Taşikardi</h5>
+    Taşikardi, kalbin bir dakikada yüzden fazla atmasıdır. Bradikardi, kalp hızının istirahat halinde 
+    bir dakikada altmış atımın altında olma durumudur.
+    <br>
+        Taşikardi, kalbin içinde fazla elektriksel yollar olmasından dolayı veya başka noktadan sürekli uyarı çıkaran
+         bir merkez nedeni ile oluşur. Taşikardide genellikle hızlı kalp atışı,
+         çarpıntı, göğüste sıkıntı hissi, fenalık hissi, bayılma gibi durumlar oluşur.
+    
+     <h5 class="card-title">Brakardi </h5>
+       Bradikardi, kalbin dakikada altmışın altında atması durumudur. Kalbin uyarı noktası olan sinüs düğümünün yavaş 
+       çalışmasına veya hiç çalışmamasına, sinüs düğümünden 
+       çıkan uyarıların karıncıklara iletilmesinde yavaşlama veya durmasına bağlı olarak oluşur. 
+  </div>
+</div>
+
+<br><br>
+
+<div class="card">
+  <div class="card-header">
+    <strong> Tespitinde kullanılan Yöntemler  </strong>
+  </div>
+  <div class="card-body">
+    
+    
+     Kalp ritim bozukluğu tespitindeki yapılan çalışmalar iki şekilde gerçekleştirilmiştir. 
+     <br>
+     Birinci olarak EKG çekilmesi ile gerçek zamanlı olarak kalbin ritmi grafik şeklinde çekilir.
+     <br>
+     İkinci olarak hasta vücutta bulunan ve kalp ritminde etkisi olan bazı değerler girdi olarak alınır,
+     bu değerlere göre aritmi olup olmadığı tespit edilir. 
+     Bu programda kalp ritminde etkisi olan, bireyin sahip olduğu 
+     nitelikleri girdi  olarak kullanıp makine öğrenmesi algoritmaları ile kalp aritmi tahmini yapılmıştır.
+    Aritmi Testi sayfasında   yaş, cinsiyet göğüs ağrısı tipi,
+    dinlenme halindeki kan basıncı, kolesterol miktarı, şeker hastalığı durumu, dinlenme halindeki EKG durumu, 
+    ulaşılmış maksimum kalp atışı, egzersiz halinde göğüs ağrısının olup olmadığı, dinlenmeye göre egzersizle 
+    indüklenen ST depresyonu,
+      egzersiz durumunda St segmenti tipi, tıkalı damar sayısı, Akdeniz Anemisi verileri kullanıcıdan alınarak test yapılır.
+      <br>
+      Programda makine öğrenmesinde kullanılan sınıflandırma algoritmaları (KNN, lojistik regresyon, 
+    naive Bayes, karar ağaçları) ile modeller oluşturulmuştur. Kullanıcının durumunu kritik ya da normal olduğunun tahmini yapılır.
+   
+  </div>
+</div>
+
+<br><br>
+
+
+
+      
+
+    <div class="row mt-2">
+      <div class="col-sm">
+
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Aritmi Nedir?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+         Kalp ritim bozukluğu (ARİTMİ), kısaca kalbin çok hızlı, çok yavaş veya düzensiz atması durumudur.
+          Kalp ritim bozukluğu (ARİTMİ), kısaca kalbin çok hızlı, çok yavaş veya düzensiz atması durumudur.
+           Eğer kalbiniz dakikada 100 defadan fazla atıyor ise bu duruma taşikardi ya da kalp çarpıntısı adı verilmektedir.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-outline-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Ritim bozukluklarının teşhisinde kullanılan başlıca testler
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+               <strong> Ritim bozukluklarının teşhisinde kullanılan başlıca testler şunlardır:</strong>
+               <br>
+<p>Elektrokardiyografi (EKG) </p>
+<p>Holter testi</p>
+<p>Olay kaydedici (Transtelefonik monitör) </p>
+<p>Efor testi (Stres Testi) </p>
+<p>Tilt testi (Eğik masa testi) </p>
+<p>Ekokardiyografi (EKO) </p>
+<p>Elektrofizyolojik Çalışma</p>
+
+              </div>
+            </div>
+          </div>
+         
+        </div> <!--accordion sonu-->
+
+      </div> <!--col sonu-->
+
+    </div> <!--row2 sonu-->
+
+    <br><br><br>
+
+
+      
+
+</div>
+
+{% endblock  %}
